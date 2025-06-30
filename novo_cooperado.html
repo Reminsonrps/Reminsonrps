@@ -1,0 +1,105 @@
+<!-- novo-cooperado.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Novo Cooperado | CoopPescador</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color:rgb(6, 67, 95);
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+label {
+                display: inline-block;
+            font-size: 0.9em;
+            font-weight: bold;
+            width: 90px;
+
+            }
+            textarea { height: 100px;
+                                    }
+
+            input, textarea {
+            display: inline-block;
+            width: 200px; }
+
+
+            input, textarea {
+            border: 1px solid #CCC;
+            box-shadow: inset 2px 2px 2px ;
+            font-size: 0.9em;
+            padding: 2px 5px;}
+.azul{
+   border:1px solid blue;
+   background-color:blue;
+}
+h1{
+  text-align:center;
+  color:white;
+  
+}
+.formato{
+       position:relative;
+       top:50px;
+       left: 700px;;
+       border:1px solid white;
+       padding:12px;
+       box-shadow: 4px 4px 4px 10px rgba(0,0,0,0.25);
+      width: 400px;
+      height:350px
+
+
+
+
+
+
+
+
+}
+p{color:white;
+   font-size:20px;
+}
+
+
+  </style>
+</head>
+<body>
+  <header class="azul"><h1>Cadastrar Novo Cooperado</h1></header>
+  
+
+  <main>
+    <div class="formato">
+     <form method="POST" action="/coop">
+      <label><p>Nome:</p> <input type="text" name="nome" required></label><br>
+      <label><p>Contato:</p> <input type="text" name="contato" required></label><br>
+      <label><p>Função:</p><input type="text" name="funcao" required></label><br><br>
+      <button type="submit" style="width: 100px;
+      height: 60px;
+      font-size: 18px;">Registrar</button>
+    </form>
+  
+  </main>
+
+     <form method="GET" action="/exportar_csv">
+        <button type="submit" style="position:relative;left:880px; top:-40px;width: 100px;text-align:center;
+      height: 60px;
+      font-size: 15px;">📁 Exportar CSV</button>
+    </form>
+       </div>
+</body>
+</html>

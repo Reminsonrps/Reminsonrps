@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu com Submenus</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #0066cc;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li:hover {
+      background-color: #004080;
+    }
+
+    /* Submenu */
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #005bb5;
+      min-width: 180px;
+      z-index: 1000;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    nav ul ul li {
+      width: 100%;
+    }
+
+    nav ul ul a {
+      padding: 10px 15px;
+      font-weight: normal;
+    }
+
+    nav ul ul li:hover {
+      background-color: #003f66;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Início</a>
+        <ul>
+          <li><a href="#sobre">Quem Somos</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Produção</a>
+        <ul>
+          <li><a href="#cadastrar-producao">Cadastrar Produção</a></li>
+          <li><a href="#listar-producao">Lista de Produções</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Vendas</a>
+        <ul>
+          <li><a href="#registrar-venda">Registrar Venda</a></li>
+          <li><a href="#historico-vendas">Histórico de Vendas</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Cooperados</a>
+        <ul>
+          <li><a href="#novo-cooperado">Novo Cooperado</a></li>
+          <li><a href="#listar-cooperados">Lista de Cooperados</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Relatórios</a>
+        <ul>
+          <li><a href="#mensal">Relatório Mensal</a></li>
+          <li><a href="#financeiro">Relatório Financeiro</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color:rgb(6, 67, 95);
   margin: 0;
   padding: 0;
 }
@@ -22,6 +22,7 @@ label {
             font-size: 0.9em;
             font-weight: bold;
             width: 90px;
+
             }
             textarea { height: 100px;
                                     }
@@ -33,6 +34,24 @@ label {
 
             input, textarea {
             border: 1px solid #CCC;
-            box-shadow: inset 2px 2px 2px #EEE;
+            box-shadow: inset 2px 2px 2px ;
             font-size: 0.9em;
             padding: 2px 5px;}
+.azul{
+   border:1px solid blue;
+   background-color:blue;
+}
+h1{
+  text-align:center;
+  color:white;
+  
+}
+.formato{
+       position:relative;
+       border:1px solid white;
+       padding:12px;
+       box-shadow: 4px 4px 4px 10px rgba(0,0,0,0.25);
+
+
+
+}

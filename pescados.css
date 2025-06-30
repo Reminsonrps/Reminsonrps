@@ -1,0 +1,121 @@
+ 
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #0066cc;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li:hover {
+      background-color: #004080;
+    }
+
+    /* Submenu */
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #005bb5;
+      min-width: 180px;
+      z-index: 1000;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    nav ul ul li {
+      width: 100%;
+    }
+
+    nav ul ul a {
+      padding: 10px 15px;
+      font-weight: normal;
+    }
+
+    nav ul ul li:hover {
+      background-color: #003f66;
+    } {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #0066cc;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .banner {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/e/e6/Fishing_boat_in_Brazil.jpg') no-repeat center center;
+      background-size: cover;
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px #000;
+    }
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .card {
+      background-color: #e6f2ff;
+      padding: 20px;
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    
+  
